@@ -1,0 +1,25 @@
+#statItem{
+  /* border-top: 1px var(--backcolor) solid;
+  border-bottom: 1px var(--backcolor) solid; */
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  /* justify-items: center; */
+}
+
+
+#ligneHr
+{
+  color: var(--backcolor);
+  /* background-color: var(--backcolor); */
+  opacity: 1;
+  margin: 0;
+  padding: 0 0;
+}
+
+
+#containerBloc{
+  background-color: rgb(255, 255, 255);
+}
