@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { link } from 'fs';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
