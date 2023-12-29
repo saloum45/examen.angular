@@ -1,0 +1,30 @@
+nav {
+  height: 150px;
+  width: 100%;
+  background-color: var(--backcolor);
+}
+
+nav .logo {
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+nav .logo img {
+  width: 100%;
+  height: 90px;
+  /* background-color: black; */
+  border-radius: 10px;
+}
+
+nav .nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+nav .nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
