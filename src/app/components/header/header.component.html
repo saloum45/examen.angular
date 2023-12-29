@@ -1,12 +1,10 @@
 <nav>
   <div class="logo">
-    <img src="assets/logo.png" alt="">
+    <img src="assets/logo.png" alt="" />
   </div>
   <div class="nav-links">
-    <a routerLink="listCombats">COMBAT</a>
-    <a>ACTU</a>
-    <a>CLASSEMENT</a>
-    <a>STATS</a>
-    <a routerLink="listLutteurs">LUTTEURS</a>
+    @for (link of linkItems; track $index) {
+    <a routerLink="{{ link.path }}">{{ link.name }}</a>
+    }
   </div>
 </nav>

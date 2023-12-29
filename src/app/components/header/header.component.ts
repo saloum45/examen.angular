@@ -12,6 +12,35 @@ import { link } from 'fs';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit {
+
+  // Attributs
+  // les liens du header
+  public linkItems=[
+    {
+      path:"listCombats",
+      name:"COMBATS"
+    },
+    {
+      path:"listActus",
+      name:"ACTU"
+    },
+    {
+      path:"listClassements",
+      name:"CLASSEMENT"
+    },
+    {
+      path:"listStats",
+      name:"STATS"
+    },
+    {
+      path:"listLutteurs",
+      name:"LUTTEURS"
+    }
+  ];
+
+
+
+  // Methodes
   ngOnInit(): void {
     this.activeLink();
   }
