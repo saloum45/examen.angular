@@ -1,0 +1,120 @@
+{
+  "projectName": "projet1.angular",
+  "decription": "Fichier de configuration de Taf",
+  "taf_base_url": "http:\/\/localhost\/examen_angular.php\/",
+  "les_modules": [
+  {
+  "module": "home",
+  "les_tables": [
+  {
+  "table": "actualite",
+  "description": [
+  "id",
+  "titre",
+  "created_at",
+  "updated_at",
+  "contenu",
+  "photo",
+  "id_admin"
+  ],
+  "les_types": [
+  "add",
+  "edit",
+  "list",
+  "details"
+  ]
+  },
+  {
+  "table": "admin",
+  "description": [
+  "id",
+  "email",
+  "pass",
+  "created_at",
+  "updated_at"
+  ],
+  "les_types": [
+  "add",
+  "edit",
+  "list",
+  "details"
+  ]
+  },
+  {
+  "table": "combat",
+  "description": [
+  "id",
+  "date_combat",
+  "created_at",
+  "updated_at",
+  "resultat",
+  "id_lutteur1",
+  "id_lutteur2",
+  "id_admin"
+  ],
+  "les_types": [
+  "add",
+  "edit",
+  "list",
+  "details"
+  ]
+  },
+  {
+  "table": "ecurie",
+  "description": [
+  "id",
+  "nom",
+  "date_creation",
+  "created_at",
+  "updated_at",
+  "id_admin"
+  ],
+  "les_types": [
+  "add",
+  "edit",
+  "list",
+  "details"
+  ]
+  },
+  {
+  "table": "lutteur",
+  "description": [
+  "id",
+  "nom",
+  "description",
+  "taille",
+  "poids",
+  "age",
+  "date_creation",
+  "photo",
+  "created_at",
+  "updated_at",
+  "id_admin",
+  "id_ecurie"
+  ],
+  "les_types": [
+  "add",
+  "edit",
+  "list",
+  "details"
+  ]
+  }
+  ]
+  },
+  {
+  "module": "public",
+  "les_tables": [
+  {
+  "table": "login",
+  "description": [
+  "login",
+  "pwd"
+  ],
+  "les_types": [
+  "login"
+  ]
+  }
+  ]
+  }
+  ]
+  }
