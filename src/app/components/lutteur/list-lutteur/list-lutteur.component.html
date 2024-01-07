@@ -1,4 +1,7 @@
 <div class="container mt-3">
+  <button class="btn mb-3" id="addButton" routerLink="/addLutteur">
+    Ajouter
+  </button>
   <!-- <p class="text-white px-3 pt-2">list-lutteur works!</p> -->
   <div class="row row-cols-1 row-cols-md-3 g-4">
     @for (lutteurecurie of lutteursEcuries; track $index) {
@@ -20,6 +23,6 @@
       </div>
     }
 
-   
+
   </div>
 </div>

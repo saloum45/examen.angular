@@ -1,36 +1,31 @@
 <div class="container mt-3">
+  <button class="btn mb-3" id="addButton" routerLink="/addActus">
+    Ajouter
+  </button>
   <div class="row">
+    @for (actualite of actualites; track $index) {
     <div class="col-6">
-      <div class="card mb-3" >
+      <div class="card mb-3">
         <div class="row g-0">
           <div class="col-md-4">
-            <img style="height: 250px;" src="https://www.pressafrik.com/photo/art/grande/58949905-43405236.jpg?v=1631793106" class="img-fluid rounded-start" alt="...">
+            <img
+              style="height: 250px; width: 100%"
+              src="{{ actualite.photo }}"
+              alt="..."
+            />
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">YAHYA YEKINI, Le Roi Incontesté, Prêt pour un Nouveau Défi</h5>
-              <p class="card-text">YEKINI, le puissant lutteur, se prépare à relever un nouveau défi sur le ring. Sa détermination et son engagement sont plus forts que jamais. Les fans attendent avec impatience son retour triomphant.</p>
-              <p class="card-text"><small class="text-body-secondary">Il y a 3 min</small></p>
+              <h5 class="card-title">{{ actualite.titre }}</h5>
+              <p class="card-text">{{ actualite.contenu }}</p>
+              <p class="card-text">
+                <small class="text-body-secondary">Il y a 3 min</small>
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-6">
-      <div class="card mb-3" >
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img style="height: 250px;" src="http://news.adakar.com/img_photos/L/com-bom-eum-0015.jpg" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Eumeu Sène, Nouvelle Stratégie, Nouvelle Victoire en Vue</h5>
-              <p class="card-text">Eumeu Sène dévoile sa nouvelle stratégie pour son prochain combat. Les experts s'interrogent sur cette approche inédite. Le lutteur affirme être prêt à surprendre ses fans avec une victoire mémorable</p>
-              <p class="card-text"><small class="text-body-secondary">Il y a 5 heures</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    }
   </div>
 </div>

@@ -6,3 +6,12 @@
   --backcolorclair:#0080003b;
   /* --backcolor:#0000FF; */
 }
+
+
+#addButton
+{
+  background-color: white;
+  color: #008000;
+  width: 49%;
+  font-weight: bold;
+}

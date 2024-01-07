@@ -1,1 +1,80 @@
-<p>add-lutteur works!</p>
+<div class="container w-50 mt-5">
+  <div class="alert alert-success text-center fw-bold" role="alert">
+    Ajout d'un lutteur
+  </div>
+
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput"
+      placeholder=""
+      [(ngModel)]="nom"
+    />
+    <label for="floatingInput">Nom</label>
+  </div>
+  <div class="form-floating mb-3">
+    <textarea
+      class="form-control"
+      placeholder="Leave a comment here"
+      id="floatingTextarea2"
+      style="height: 100px"
+      [(ngModel)]="description"
+    ></textarea>
+    <label for="floatingTextarea2">Description</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput"
+      placeholder=""
+      [(ngModel)]="taille"
+    />
+    <label for="floatingInput">Taille</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput"
+      placeholder=""
+      [(ngModel)]="poids"
+    />
+    <label for="floatingInput">Poids</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput"
+      placeholder=""
+      [(ngModel)]="age"
+    />
+    <label for="floatingInput">Age</label>
+  </div>
+  <div class="form-floating">
+    <input
+      type="text"
+      class="form-control"
+      id="floatingInput"
+      placeholder=""
+      [(ngModel)]="photo"
+    />
+    <label for="floatingInput">Photo</label>
+  </div>
+  <div class="form-floating mt-3">
+    <select class="form-select" id="floatingSelectGrid" [(ngModel)]="id_ecurie">
+      @for (ecurie of ecuries; track $index) {
+        <option value="{{ecurie.id}}">{{ecurie.nom_ecurie}}</option>
+      }
+
+
+    </select>
+    <label for="floatingSelectGrid">Ecurie</label>
+  </div>
+
+  <button class="btn w-100 mt-3 mb-3" id="addButton" (click)="Ajouter()">
+    Ajouter
+  </button>
+</div>

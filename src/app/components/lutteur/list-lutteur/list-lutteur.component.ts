@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../../service/api.service';
 import { HttpClient } from '@angular/common/http';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-list-lutteur',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './list-lutteur.component.html',
   styleUrl: './list-lutteur.component.css',
   providers:[
